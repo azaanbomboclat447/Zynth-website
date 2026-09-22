@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Webforge builds fast, conversion-focused websites for growing businesses."
+    />
+    <title>Zynth</title>
+    <link rel="icon" href="zynth-logo-white.png" type="image/svg+xml" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="js.js">
+  </head>
+  <body>
+    <div class="top">
+    <img src="zynth-logo-white.png" alt="zynth">
+    <nav>
+  <a href="project.html">Projects</a>
+  <a href="index.html">Home</a>
+  <a href="getstarted.html">Contact</a>
+  </nav>
+   </div>
+   <div class="hero">
+    <h1>build something <br> <span class="accent">incredible</span> today </h1>
+    <p>Custom websites for small businesses — clean code, 
+fast load times, and a real person to talk to.</p>
+<a href="getstarted.html" class="btn">Get Started</a>
+   </div>
+   <div class="about">
+    <h2>About</h2>
+    <p>"I build clean, fast websites for small businesses — 
+        no agency markup, no middlemen, 
+      just direct communication and a site that actually works for you"</p>
+      </div>
+      <div class="fade-in">
+   <div class="pricing">
+    <h2>pricing</h2>
+    <div class="card-group">
+   <div class="card">
+    <h3>normal</h3>
+    <p class=" card-price"> $400</p>
+    <p class="card-desc">Perfect for trying out the platform and exploring basics includes most features 1-2 pages</p>
+<a href="https://stripe.com" class="btn">Get Started</a>
+   </div>
+   <div class="card card--featured">
+    <h3>standard</h3>
+    <span class="badge">Most Popular</span>
+      <p class=" card-price"> $700</p>
+      <p class=" card-desc">standard includes fortnightly website checkups 3-5 pages
+        includes 99% of features 
+        businesses ever need to skyrocket there workflow</p>
+<a href="https://stripe.com" class="btn">Get Started</a>
+   </div>
+   <div class="card">
+    <h3>pro</h3>
+      <p class="card-price"> $1,000</p>
+      <p class="card-desc"> pro includes weekly website checkups 3-8 pages includes 
+        everything this is made for high end real serious businesses</p>
+<a href="https://stripe.com" class="btn">Get Started</a>
+   </div>
+    </div>
+   </div>
+   </div>
+   <footer class="footer">
+    <p> all copyrights @Zynth</p>
+   </footer>
+   <script>
+    const faders = document.querySelectorAll('.fade-in')
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('visible');
+
+        }
+      })
+        
+      }, { threshold:0.15});
+      faders.forEach(el => observer.observe(el))
+        
+   </script>
+  </body>
+</html>

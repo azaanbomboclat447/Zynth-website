@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore sample Webforge website outcomes for service, trade, health, and consulting businesses."
+    />
+    <title>Zynth</title>
+    <link rel="icon" href="zynth-logo-white.png" type="image/svg+xml" />
+    <link rel="manifest" href="site.webmanifest" />
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="js.js">
+  </head>
+  <body>
+        <div class="top">
+    <img src="zynth-logo-white.png" alt="zynth">
+    <nav>  
+  <a href="project.html">Projects</a>
+  <a href="index.html">Home</a>
+  <a href="getstarted.html">Contact</a>
+  </nav>
+  </div>
+
+     <div class="hero">
+    <h1>Our recent  <span class="accent">work</span> </h1>
+    <p>Custom websites for small businesses — clean code, 
+fast load times, and a real person to talk to.</p>
+<a href="getstarted.html" class="btn">Get Started</a>
+   </div>
+<div class="fade-in">
+<div class="cards">
+    <div class=" card1 card1--muted">
+    <h3>More Coming Soon</h3>
+    <p>New projects being added here shortly.</p>
+    </div>
+
+  <div class="card1">
+  <h3>Zynth — Original Design</h3>
+  <img src="project.png" alt="project">
+      <p>the first version of this site, built with a lighter, Apple-inspired look before evolving into the current dark, high-contrast theme.</p>
+      </div>
+        <div class=" card1 card1--muted">
+    <h3>More Coming Soon</h3>
+    <p>New projects being added here shortly.</p>
+</div>
+</div>
+<footer class="footer">
+    <p> all copyrights @Zynth</p>
+   </footer>
+   <script>
+    const faders = document.querySelectorAll('.fade-in')
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('visible');
+
+        }
+      })
+        
+      }, { threshold:0.15});
+      faders.forEach(el => observer.observe(el))
+        
+   </script>
+  </body>
+</html>
