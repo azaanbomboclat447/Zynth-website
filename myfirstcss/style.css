@@ -294,6 +294,14 @@ transform: translateY(0);
   transform: none;
   box-shadow: none;
   border-color: rgba(255, 255, 255, 0.05);
+  
+}
+.cards a,
+.cards a:visited{
+display: flex;
+  flex: 1 1 calc(33.333% - 16px);
+  text-decoration: none;
+  color: inherit;
 }
 /* get started */
 .contact-section {
